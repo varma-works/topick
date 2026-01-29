@@ -8,7 +8,7 @@ button.addEventListener("click", async () => {
     // Clear old results
     resultsContainer.innerHTML = "";
 
-    const response = await fetch("http://127.0.0.1:8000/task", {
+    const response = await fetch("https://topick.onrender.com/task", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -34,3 +34,4 @@ button.addEventListener("click", async () => {
     });
 
 });
+
